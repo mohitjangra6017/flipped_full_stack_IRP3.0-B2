@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<title>Transliteration Keyboard</title>
+<title>Transliteration Keyboard App</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -9,7 +9,10 @@
 body,h1 {font-family: "Raleway", sans-serif}
 body, html {height: 100%}
 .bgimg {
-    background-color: black;
+  background: #800080;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #ffc0cb, #800080);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #ffc0cb, #800080); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   min-height: 100%;
   background-position: center;
   background-size: cover;
@@ -32,8 +35,8 @@ div.justified {
     <!--Lpgo -->
   </div>
   <div class="w3-display-middle">
-    <h1 class="w3-jumbo w3-animate-top">Transliteration Keyboard </h1>
-    <hr class="w3-border-grey" style="margin:auto;width:40%">
+    <h1 class="w3-jumbo w3-animate-top">Transliteration Keyboard App </h1>
+    <hr class="w3-border-grey" style="margin:auto;width:100%">
     <p class="w3-large w3-center">Select Language : 
             <select id="lang">
                 {% for l in lang %}
@@ -65,8 +68,8 @@ div.justified {
 <hr><br>
    
   </div>
-  <div class="w3-display-bottomleft w3-padding-large">
-      Developed by Arko Chatterjee
+  <div class="w3-display-bottommiddle w3-padding-large">
+      Developed by Mohit Jangra
     
   </div>
 </div>

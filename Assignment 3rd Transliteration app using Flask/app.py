@@ -25,7 +25,7 @@ def predict():
 
         #Calling API to search for transliteration
         api = "http://xlit.quillpad.in/quillpad_backend2/processWordJSON?lang={0}&inString={1}".format(language,clicked)
-        response = requests.get(str(api))
+        response = request.get(str(api))
         output = (response.json())
 
         print(output)
